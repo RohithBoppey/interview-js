@@ -24,7 +24,7 @@ class MyEventHandler {
 	}
 
 	userSubscribe(eventName, callback) {
-        console.log(callback);
+		console.log(callback);
 		if (this.events[eventName]) {
 			// event exists
 			this.events[eventName].push(callback);
@@ -33,9 +33,9 @@ class MyEventHandler {
 
 	userUnsubscribe(eventName, callback) {
 		if (this.events[eventName]) {
-			this.events[eventName] = this.events[eventName].filter(cb => {
-                cb != callback;
-            });
+			this.events[eventName] = this.events[eventName].filter((cb) => {
+				cb != callback;
+			});
 		}
 	}
 
@@ -71,8 +71,8 @@ const users = [
 	},
 ];
 
-function c(name){
-    return console.log(`User ${name} has subscribed`);
+function c(name) {
+	return console.log(`User ${name} has subscribed`);
 }
 
 users.forEach((user) => {
