@@ -1,19 +1,19 @@
 // // playing with closures
-// function x() {
-// 	console.log("a");
-// 	setTimeout(() => {
-// 		console.log("hello");
-// 	}, 3000);
-// 	setTimeout(() => {
-// 		console.log("in between");
-// 	}, 0);
-// 	setTimeout(() => {
-// 		console.log("b");
-// 	}, 1000);
-// 	console.log("c");
-// }
+function x() {
+	console.log("a");
+	setTimeout(() => {
+		console.log("hello");
+	}, 3000);
+	setTimeout(() => {
+		console.log("in between");
+	}, 0);
+	setTimeout(() => {
+		console.log("b");
+	}, 1000);
+	console.log("c");
+}
 
-// // x();
+// x();
 
 // (() => {
 // 	for (var i = 0; i < 5; i++) {
@@ -129,4 +129,4 @@ let f4 = () => {
 	}, 2000);
 };
 
-f4();
+// f4();

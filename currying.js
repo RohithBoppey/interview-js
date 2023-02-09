@@ -17,5 +17,5 @@ function fn1(){
     }
 }
 
-r = fn()(1)(6)
+r = fn1()(1)(6)
 console.log(r);

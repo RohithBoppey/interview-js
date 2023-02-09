@@ -6,6 +6,8 @@ let z = {name: "Jaswanth Boppey"}
 x[y] = {name: "hello"}
 console.log(x);
 x[y] = z
-// will be accessed
+console.log(x);
+
+// will be accessed as
 x['[object Object]'] = {name: "No name"}
 console.log(x);

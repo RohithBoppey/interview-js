@@ -5,8 +5,13 @@ console.log(1 / 0);
 console.log(3 + 8 + "2" + 1);
 console.log("3" + 8 + 2 + 1);
 
-const obj1 = {name: "Rohith"}
-const obj2 = {name: "Rohith"}
+let obj1 = {name: "Rohith"}
+let obj2 = {name: "Rohith"}
+
+console.log(obj1 == obj2);
+console.log(obj1 === obj2);
+
+obj1 = obj2;
 
 console.log(obj1 == obj2);
 console.log(obj1 === obj2);

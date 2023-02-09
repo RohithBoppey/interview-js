@@ -4,6 +4,8 @@ const a = {name: 'Rohith', age: 20}
 const {name: Myname, age} = a;
 console.log(Myname, age);
 
+// console.log(name) // this will throw an error
+
 const b = [
     {
         quote: "Honesty is the best policy",

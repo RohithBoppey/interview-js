@@ -13,6 +13,8 @@ Student.prototype.printAllDetails = function() {
 
 let s1 = new Student("Rohith Boppey", "S20200010042", "Computer science")
 let s2 = s1;
+console.log(s1 === s2);
+console.log(s1 == s2);
 console.log(s1);
 console.log(typeof(s1));
 

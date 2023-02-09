@@ -9,7 +9,7 @@ function add(...nums){
                 sum += nums[i];
             }
             resolve(() => {
-                console.log('This is a new promise resolved');
+                console.log(`This is a new promise resolved with sum = ${sum}`);
             })
         }
     })
