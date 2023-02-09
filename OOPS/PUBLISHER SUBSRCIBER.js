@@ -1,7 +1,10 @@
 class PublisherSubscriberSystem {
 	events = [];
-	// should be eventname -> Mappping
+	// should be eventname -> Mapping
 	addNewEvent(eventName) {
+		if(this.events[eventName]){
+			console.log(`Reinitialized ${eventName}`);
+		}
 		this.events[eventName] = [];
 		console.log(`Event with name ${eventName} has been created`);
 	}
@@ -73,7 +76,7 @@ demoPubSubSystem.subscribe("Event 2", sub1);
 demoPubSubSystem.subscribe("Event 2", sub2);
 
 demoPubSubSystem.unsubscribe("Event 2", sub1);
-
+demoPubSubSystem.addNewEvent("Event 2");
 demoPubSubSystem.emit("Event 2");
 
 console.log(demoPubSubSystem);
